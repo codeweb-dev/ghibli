@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Ghibli App</title>
+</head>
+
+<body class=" bg-gray-200">
+  <div class="p-4 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+    <div class="relative w-full sm:w-1/2 flex items-center justify-center">
+      <div class="relative w-full">
+        <input id="searchInput" type="text" placeholder="Search title movies..."
+          class="border border-gray-300 rounded-l-lg py-2 px-4 w-full focus:outline-none pr-[2rem] focus:ring-2 focus:ring-black" />
+        <i class="fa-solid fa-xmark absolute right-3 top-3 opacity-60 cursor-pointer z-50 hidden" id="clearInput"></i>
+      </div>
+      <button id="searchBtn" class="px-4 py-2 bg-black text-white rounded-r-lg">Search</button>
+    </div>
+    <div id="no-results" class="p-4 text-center text-gray-600 hidden">
+    </div>
+  </div>
+
+
+  <div id="root"></div>
+  <div id="movie-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

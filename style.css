@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Add this to your global CSS file */
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Tailwind gray-400 */
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f7fafc; /* Tailwind gray-100 */
+}
+
+.scroll-modal::-webkit-scrollbar {
+  width: 3px;
+}
+
+.scroll-modal::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Tailwind gray-400 */
+  border-radius: 4px;
+}
+
+.scroll-modal::-webkit-scrollbar-track {
+  background-color: #f7fafc; /* Tailwind gray-100 */
+}
